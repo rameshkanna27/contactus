@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+        }
+
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+            color: black;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .contact-form {
+                padding: 15px;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Careers</a>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="firstname">First Name :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your first name" required>
+
+            <label for="lastname">Last Name :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="role">Job Role :</label>
+            <input type="text" id="role" name="role" placeholder="Your current job role" required>
+
+            <label for="company">Company Name :</label>
+            <input type="text" id="company" name="company" placeholder="Your company name" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit" style="background-color: black;">Send</button>
+        </form>
+    </div>
+
+        <h2 style="color: navy;">Terms and Conditions</h2>
+        <ul>
+        <li>By submitting this form, you agree to Contact Us 
+        <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+         You understand that your information will be used to respond to your inquiry and that your personal data may be processed for analytics and marketing purposes.</li>
+        <li>You also consent to receiving follow-up emails or contact regarding your query. If you do not wish to receive any further communication, please let us know in your message or follow the unsubscribe instructions in any future correspondence.</li>
+        <li>For more information on how we handle and protect your data, please read our full <a href="#">Privacy Policy</a>.</li>
+    </ul>
+    <center>
+        <p>| contactus@gmail.com | 044-223344 |</p>
+    </center>
+
+</body>
+</html>
